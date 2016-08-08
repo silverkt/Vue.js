@@ -10,21 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var label: UILabel!
+    @IBOutlet var label2 : UILabel!
 
 
     override func viewDidLoad() {
     
         super.viewDidLoad()
-        
-        label!.text = "this is new shit"
+      
         
     
+    }
+    
+    @IBAction func onclick(sender: UIButton) {
+        label.text = "this is new shit"
+        label2.text = "en"
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
 
 }

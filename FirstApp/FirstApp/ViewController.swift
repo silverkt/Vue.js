@@ -20,10 +20,16 @@ class ViewController: UIViewController {
         
     
     }
+    @IBAction func confirmBt(sender: AnyObject) {
+        print("confirm")
+    }
     
     @IBAction func onclick(sender: UIButton) {
         label.text = "this is new shit"
         label2.text = "en"
+        while true {
+            print("this is shit")
+        }
 
     }
 

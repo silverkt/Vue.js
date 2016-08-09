@@ -37,6 +37,24 @@
                                     <action selector="onclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="97H-6Y-9IB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="chW-yD-uOC">
+                                <rect key="frame" x="196" y="407" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="确认"/>
+                                <connections>
+                                    <action selector="confirmBt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eg1-5h-Gd6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FJ0-Bq-DnJ">
+                                <rect key="frame" x="249" y="518" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZd-o8-BxK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -48,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="153.59999999999999" y="303.88"/>
+            <point key="canvasLocation" x="153" y="303"/>
         </scene>
     </scenes>
 </document>

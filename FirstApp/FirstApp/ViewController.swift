@@ -16,22 +16,29 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
     
         super.viewDidLoad()
+        let x:CGRect = CGRectMake(10,20, 300, 200)
+    
+        let lbel:UILabel! = UILabel(frame:x)
+        lbel.text = "sdfa"
+    
+        
+        self.view.addSubview(lbel)
       
         
     
     }
     @IBAction func confirmBt(sender: AnyObject) {
-        print("confirm")
+        
     }
     
     @IBAction func onclick(sender: UIButton) {
         label.text = "this is new shit"
         label2.text = "en"
-        while true {
-            print("this is shit")
-        }
+   
 
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

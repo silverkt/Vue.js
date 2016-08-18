@@ -288,6 +288,7 @@
 				97D722721D58D21E00BAFECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

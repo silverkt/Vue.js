@@ -24,11 +24,17 @@ class FirstPageView: UIView
         print(button1.buttonType)
         self.addSubview(button1)
         
+        
     }
     
     func btnclick()->Void{
         
         self.backgroundColor = UIColor.blueColor()
+        //let win: UIWindow! = UIApplication.sharedApplication().keyWindow
+        let superv: UIView? = self.superview
+        self.removeFromSuperview()
+        let sec: UIView = SecondPageView()
+        superv?.addSubview(sec)
         
         
     }

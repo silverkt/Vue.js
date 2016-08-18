@@ -14,6 +14,7 @@
 		9714C8341D6596EF00C949F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9714C8331D6596EF00C949F4 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		97236A971D6598B400650923 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97236A961D6598B400650923 /* TabBarController.swift */; settings = {ASSET_TAGS = (); }; };
 		97236A991D659FDF00650923 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97236A981D659FDF00650923 /* RootController.swift */; settings = {ASSET_TAGS = (); }; };
+		97E1ADCA1D66055500765978 /* SecondPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E1ADC91D66055500765978 /* SecondPageView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9714C8331D6596EF00C949F4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		97236A961D6598B400650923 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		97236A981D659FDF00650923 /* RootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		97E1ADC91D66055500765978 /* SecondPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				9714C8301D65806B00C949F4 /* FirstPageView.swift */,
+				97E1ADC91D66055500765978 /* SecondPageView.swift */,
 				97236A9A1D65A2FC00650923 /* FirstPage */,
 			);
 			name = Views;
@@ -185,6 +188,7 @@
 				9714C8311D65806B00C949F4 /* FirstPageView.swift in Sources */,
 				9714C81B1D65550A00C949F4 /* AppDelegate.swift in Sources */,
 				9714C8341D6596EF00C949F4 /* ViewController.swift in Sources */,
+				97E1ADCA1D66055500765978 /* SecondPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

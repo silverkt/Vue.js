@@ -12,7 +12,8 @@ import UIKit
 class FirstPageView: UIView
 {
     init() {
-        super.init(frame: UIScreen.mainScreen().bounds)
+        //super.init(frame: UIScreen.mainScreen().bounds)
+        super.init(frame:CGRect(x: 200, y: 400, width: 400, height: 800))
         self.backgroundColor = UIColor.purpleColor()
         let button1: UIButton = UIButton(type: .System)
         button1.frame = CGRect(x: 20, y: 50, width: 150, height: 80)

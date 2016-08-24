@@ -11,5 +11,8 @@ import UIKit
 
 class NavigationController:XQUINavigationController
 {
+    override func childViewControllerForStatusBarStyle() -> UIViewController? {
+        return self.topViewController
+    }
     
 }

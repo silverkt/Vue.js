@@ -3,7 +3,7 @@
   <div id="app">
   <div class="line"></div>
 <el-menu
-  :default-active="activeIndex2"
+  :default-active="activeIndex"
   class="el-menu-demo"
   mode="horizontal"
   @select="handleSelect"
@@ -21,11 +21,7 @@
 </el-menu>
 
     <img src="./assets/logo.png">
-
-
-
-   
- 
+<el-button @click="changeDefault()"></el-button>
    
     <router-view/>
   </div>
@@ -37,11 +33,10 @@ export default {
         return {
             name: 'app',
             activeIndex: '1',
-            activeIndex2: '1'
         };
       },
       methods: {
-        handleSelect(key, keyPath) {
+        handleSelect:function(key, keyPath) {
           console.log(key, keyPath);
         }
       }

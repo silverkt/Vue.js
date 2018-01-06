@@ -21,6 +21,7 @@
   </el-submenu>
   <el-menu-item index="/mytest"> 测试页</el-menu-item>
   <el-menu-item index="/newpage/12">新页面</el-menu-item>
+    <el-menu-item index="/fortabs">标签页测试</el-menu-item>
 </el-menu>
 
     

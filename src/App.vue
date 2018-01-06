@@ -3,7 +3,7 @@
   <div id="app">
   <div class="line"></div>
 <el-menu
-  :default-active="activeIndex"
+  :default-active="this.$route.path"
   class="el-menu-demo"
   mode="horizontal"
   @select="handleSelect"
@@ -11,15 +11,15 @@
   text-color="#fff"
   active-text-color="#ffd04b" 
   :router="true">
-  <el-menu-item index="1" route="/"> 首页</el-menu-item>
+  <el-menu-item index="/"> 首页</el-menu-item>
   <el-submenu index="2">
     <template slot="title">我的工作台</template>
     <el-menu-item index="2-1">选项1</el-menu-item>
     <el-menu-item index="2-2">选项2</el-menu-item>
     <el-menu-item index="2-3">选项3</el-menu-item>
   </el-submenu>
-  <el-menu-item index="3" route="/mytest"> 测试页</el-menu-item>
-  <el-menu-item index="4" route="/newpage/12">新页面</el-menu-item>
+  <el-menu-item index="/mytest"> 测试页</el-menu-item>
+  <el-menu-item index="/newpage/12">新页面</el-menu-item>
 </el-menu>
 
     
@@ -34,8 +34,13 @@ export default {
       data() {
         return {
             name: 'app',
-            activeIndex: '1',
         };
+      },
+      created() {
+        console.log(this.$route.path);
+        console.log(this.$route);
+        console.log(this.$route.params);
+        console.log(this.$route.query);
       },
       methods: {
         handleSelect:function(key, keyPath) {

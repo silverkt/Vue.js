@@ -20,6 +20,7 @@ export default new Router({
     	component: MyTest
     },
     {
+    	name: 'myNewPage',
     	path:'/newpage/:id',
     	component: NewPage
     }

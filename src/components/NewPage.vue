@@ -1,5 +1,8 @@
 <template>
-	<div>{{msg}}</div>
+	<div>{{msg}}
+		<el-button @click="openMenu()">展开菜单</el-button>
+	</div>
+	
 </template>
 <script>
 export default{
@@ -12,6 +15,9 @@ export default{
 		console.log('NewPage created');
 	},
 	methods: {
+		openMenu: function() {
+			this.$emit("mysubclick");
+		}
 
 	}
 }

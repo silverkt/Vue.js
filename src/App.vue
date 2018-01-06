@@ -2,7 +2,7 @@
 <template>
   <div id="app">
   <div class="line"></div>
-<el-menu
+<el-menu ref="myElmenu"
   :default-active="this.$route.path"
   class="el-menu-demo"
   mode="horizontal"
@@ -10,7 +10,8 @@
   background-color="#545c64"
   text-color="#fff"
   active-text-color="#ffd04b" 
-  :router="true">
+  :router="true"
+  >
   <el-menu-item index="/"> 首页</el-menu-item>
   <el-submenu index="2">
     <template slot="title">我的工作台</template>
@@ -24,7 +25,7 @@
 
     
    
-    <router-view/>
+    <router-view @mysubclick="popSubmenu()"/>
     <img src="./assets/logo.png">
   </div>
 </template>
@@ -33,7 +34,7 @@
 export default {
       data() {
         return {
-            name: 'app',
+            name: 'app'
         };
       },
       created() {
@@ -42,9 +43,16 @@ export default {
         console.log(this.$route.params);
         console.log(this.$route.query);
       },
+      mounted() {
+        console.log(this.$refs);
+        console.log(this.$refs.myElmenu);
+      },
       methods: {
         handleSelect:function(key, keyPath) {
           console.log(key, keyPath), this.activeIndex;
+        },
+        popSubmenu: function() {
+          this.$refs.myElmenu.open("2");
         }
       }
 }

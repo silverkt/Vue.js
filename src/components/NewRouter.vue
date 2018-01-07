@@ -1,13 +1,35 @@
 <template>
-   <transition name="el-zoom-in-top" >
+
 	<div>NewRouter
+
+	<div  v-loading="loadswitch">aaass</div>
+	<el-button @click="changeswitch()">change</el-button>
 	<router-view/>
+	{{loadswitch}}
 	</div>
-	</transition>
+
 </template>
 <script>
 export default {
-
+	data() {
+		return {
+			loadswitch: ''
+		}
+	},
+	mounted() {
+		console.log('mounted');
+		this.loadswitch = true;
+		var thisref = this;
+		setTimeout(function(){
+			thisref.loadswitch = false;
+		},10000);
+		
+	},
+	methods: {
+		changeswitch: function() {
+			this.loadswitch =false;
+		}
+	}
 }
 </script>
 <style scoped>

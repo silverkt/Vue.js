@@ -33,11 +33,11 @@ export default new Router({
     	component: Fortabs
     },
     {
-    	name: 'newrouter',
     	path: '/newrouter',
     	component: NewRouter,
     	children: [
     		{
+    			name: 'defaultchiild',
     			path: '',
     			component: NewRouter1
     		},

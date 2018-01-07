@@ -26,8 +26,9 @@
 </el-menu>
 
     
-   
+
     <router-view @mysubclick="popSubmenu()"/>
+ 
     <img src="./assets/logo.png">
   </div>
 </template>
@@ -70,4 +71,10 @@ export default {
 .el-menu a:link{
   text-decoration: none;
 }
+
+
+
+ 
+ 
+
 </style>

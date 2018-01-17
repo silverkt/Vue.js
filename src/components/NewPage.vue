@@ -5,7 +5,11 @@
 	
 </template>
 <script>
+import MyMixin from '@/mixin/Test.vue';
 export default{
+	mixins: [
+		MyMixin
+	],
 	data(){
 		return {
 			msg: 'a'

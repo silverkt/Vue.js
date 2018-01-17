@@ -1,7 +1,11 @@
 <template>
 	<div>this is a shit test+++{{msg}}
 <button @click="test()">click</button>
-<child-one>Just Testing for slot</child-one>
+<child-one>
+   <div slot="slotone"> slot one content </div>
+Just Testing for slot
+<div slot="slottwo">slot two content </div>
+</child-one>
 	</div>
 
 </template>

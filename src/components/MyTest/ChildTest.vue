@@ -1,9 +1,10 @@
 <template>
 	<div>this is a child component+{{msg}}++<br>{{resData.title}}<br>{{resData.value}}<br>{{resData.unit}}<br>
-
+<slot name = "slottwo"></slot>
 
 	<el-button type="primary" size="mini" @click="btnclicked($event)">测试按钮</el-button>
 <slot></slot>
+<slot name="slotone"></slot>
 	</div>
 </template>
 <script>

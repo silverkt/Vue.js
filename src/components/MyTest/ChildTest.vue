@@ -3,7 +3,7 @@
 
 
 	<el-button type="primary" size="mini" @click="btnclicked($event)">测试按钮</el-button>
-
+<slot></slot>
 	</div>
 </template>
 <script>

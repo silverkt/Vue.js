@@ -7,6 +7,7 @@ import Fortabs from '@/components/ForTabs';
 import NewRouter from '@/components/NewRouter';
 import NewRouter1 from '@/components/NewRouter/NewRouter1';
 import TestVuex from '@/components/TestVuex';
+import TestFilter from '@/components/TestFilter';
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
         name: 'TestVuex',
         path: '/testvuex',
         component: TestVuex
+    },
+    {
+        name: 'TestFilter',
+        path: '/testfilter',
+        component: TestFilter
     }
   ]
 })

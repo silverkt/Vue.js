@@ -24,6 +24,7 @@
     <el-menu-item index="/fortabs">标签页测试</el-menu-item>
     <el-menu-item index="/newrouter">子路由测试</el-menu-item>
     <el-menu-item index="/testvuex">vuex测试</el-menu-item>
+    <el-menu-item index="/testfilter">filter测试</el-menu-item>
 </el-menu>
 
     

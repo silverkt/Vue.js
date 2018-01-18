@@ -6,6 +6,7 @@ import NewPage from '@/components/NewPage';
 import Fortabs from '@/components/ForTabs';
 import NewRouter from '@/components/NewRouter';
 import NewRouter1 from '@/components/NewRouter/NewRouter1';
+import TestVuex from '@/components/TestVuex';
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
     			component: NewRouter1
     		}
     	]
+    },
+    {
+        name: 'TestVuex',
+        path: '/testvuex',
+        component: TestVuex
     }
   ]
 })

@@ -7,9 +7,11 @@
       </el-carousel-item>
     </el-carousel>
   </div>
+  {{$store.state}}
 </div>
 </template>
 <script>
+import store from '@/vuex/store';
 export default {
   name: 'HelloWorld',
   data () {

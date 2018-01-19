@@ -8,6 +8,7 @@ import NewRouter from '@/components/NewRouter';
 import NewRouter1 from '@/components/NewRouter/NewRouter1';
 import TestVuex from '@/components/TestVuex';
 import TestFilter from '@/components/TestFilter';
+import ForEleUi from '@/components/ForEleUi';
 
 Vue.use(Router)
 
@@ -58,6 +59,11 @@ export default new Router({
         name: 'TestFilter',
         path: '/testfilter',
         component: TestFilter
+    },
+    {
+        name: 'ForEleUi',
+        path: '/testele',
+        component: ForEleUi
     }
   ]
 })

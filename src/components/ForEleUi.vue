@@ -1,22 +1,28 @@
 <template>
 <el-table
       :data="tableData"
-      style="width: 800px;"
+      style="width: 100%"
+      stripe
       align="left">
 		      <el-table-column
 		        prop="date"
 		        label="日期"
-		        width="200px;">
+		        width="300">
 		      </el-table-column>
 		      <el-table-column
 		        prop="name"
 		        label="姓名"
-		        width="200px;">
+		        width="300">
 		      </el-table-column>
 		      <el-table-column
 		        prop="address"
-		        label="地址"
-		        width="400px;">
+		        label="地址">
+		      </el-table-column>
+		       <el-table-column		       
+		        label="自定义">
+		        	<template slot-scope="scope">
+		        		<el-button size="small" @click="handleEdit(scope.$index, scope.row)">{{ scope.row.name}}</el-button>
+		        	</template>
 		      </el-table-column>
 </el-table>
 </template>
@@ -42,7 +48,12 @@ export default {
 	            address: '上海市普陀区金沙江路 1516 弄'
 	          }]
 	        }
-        }	
+        }	,
+  methods: {
+  	handleEdit: function(index, row) {
+  		console.log(index, row);
+  	}
+  }
 }	
 </script>
 <style scoped>

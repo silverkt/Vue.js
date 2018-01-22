@@ -1,4 +1,5 @@
 <template>
+<div>
 <el-table
       :data="tableData"
       style="width: 100%"
@@ -25,6 +26,15 @@
 		        	</template>
 		      </el-table-column>
 </el-table>
+
+
+
+<el-pagination
+  background
+  layout="prev, pager, next"
+  :total="1000">
+</el-pagination>
+</div>
 </template>
 <script>
 export default {

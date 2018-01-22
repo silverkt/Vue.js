@@ -27,12 +27,13 @@
 		      </el-table-column>
 </el-table>
 
-
+<el-button @click="test">测试参数</el-button>
 
 <el-pagination
   background
   layout="prev, pager, next"
-  :total="1000">
+  :total="1000"
+  @current-change="printCurrent">
 </el-pagination>
 </div>
 </template>
@@ -62,6 +63,12 @@ export default {
   methods: {
   	handleEdit: function(index, row) {
   		console.log(index, row);
+  	},
+  	printCurrent: function(currentPage) {
+  		console.log(currentPage);
+  	},
+  	test: function($event) {
+  		console.log($event);
   	}
   }
 }	

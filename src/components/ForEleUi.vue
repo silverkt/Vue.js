@@ -1,4 +1,7 @@
 <template>
+<el-row>
+	<el-col span:24></el-col>
+</el-row>
 <div>
 <el-table
       :data="tableData"

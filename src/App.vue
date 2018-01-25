@@ -1,6 +1,12 @@
 
 <template>
-  <div id="app">
+<el-row>
+<el-col span:24>
+
+
+
+
+ <div id="app">
   <div class="line"></div>
 <el-menu ref="myElmenu"
   :default-active="this.$route.path"
@@ -35,8 +41,15 @@
  
     <img src="./assets/logo.png">
   </div>
-</template>
 
+
+
+
+
+</el-col>
+</el-row>
+ 
+</template>
 <script>
 export default {
       data() {

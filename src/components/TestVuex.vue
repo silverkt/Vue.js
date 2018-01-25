@@ -9,12 +9,16 @@
 <script>
 import store from '@/vuex/store';
 export default {
+	store,
 	data() {
 		return {
 			msg: 'Hello Vuex'
 		}
 	},
-	store
+	created() {
+		sessionStorage.setItem("name","silver");
+	}
+	
 }
 </script>
 <style scoped>

@@ -1,8 +1,7 @@
 <template>
 <el-row>
-	<el-col span:24></el-col>
-</el-row>
-<div>
+	<el-col span:24>
+		
 <el-table
       :data="tableData"
       style="width: 100%"
@@ -38,7 +37,12 @@
   :total="1000"
   @current-change="printCurrent">
 </el-pagination>
-</div>
+
+
+
+	</el-col>
+</el-row>
+
 </template>
 <script>
 export default {

@@ -18,6 +18,8 @@ export default {
 	created() {
 		sessionStorage.setItem("name","silver");
 		localStorage.setItem("name","持久话存储");
+		console.log(localStorage.key(1));
+		localStorage.removeItem("name");
 	}
 	
 }

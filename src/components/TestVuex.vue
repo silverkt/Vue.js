@@ -12,7 +12,7 @@ export default {
 	store,
 	data() {
 		return {
-			msg: 'Hello Vuex'
+			msg: 'Hello Vuex!'
 		}
 	},
 	created() {

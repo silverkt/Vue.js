@@ -28,3 +28,4 @@ new Vue({
 // 加载动画学习
 // 嵌套路由子路由
 // weex 
+// going home...

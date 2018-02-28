@@ -24,8 +24,8 @@ new Vue({
 })
  
 // axios拦截器学习， filter学习
-// 惰性加加载尝
+// 惰性加加载尝试
 // 加载动画学习
 // 嵌套路由子路由
 // weex 
-// config for macbook pro
+// 

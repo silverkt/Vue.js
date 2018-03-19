@@ -9,7 +9,9 @@ import NewRouter1 from '@/components/NewRouter/NewRouter1';
 import TestVuex from '@/components/TestVuex';
 import TestFilter from '@/components/TestFilter';
 import ForEleUi from '@/components/ForEleUi';
-import AxiosTest from '@/components/AxiosTest';
+import AxiosTest from '../components/AxiosTest';
+
+const LazyLoad  = resolve => require(['../components/LazyLoad.vue'], resolve);
 
 Vue.use(Router)
 
@@ -70,6 +72,11 @@ export default new Router({
         path: '/testaxios',
         name: 'testAxios',
         component: AxiosTest
+    },
+    {
+        name: 'LazyLoad',
+        path: '/lazyload',
+        component: LazyLoad
     }
   ]
 })

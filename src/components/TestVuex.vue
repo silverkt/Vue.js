@@ -29,6 +29,15 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+//字体图标
+@font-face {
+  font-family: 'iconfont';  /* project id 552644 */
+  src: url('//at.alicdn.com/t/font_552644_onmpi05vfs9k9.eot');
+  src: url('//at.alicdn.com/t/font_552644_onmpi05vfs9k9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_552644_onmpi05vfs9k9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_552644_onmpi05vfs9k9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_552644_onmpi05vfs9k9.svg#iconfont') format('svg');
+}
 changeBG(n)
 	background: n;
 
@@ -44,21 +53,14 @@ div
 		.abc
 			width: 100px;
 			height: 100px;
-			changeBG(#333);
-//字体图标
-@font-face {
-  font-family: 'iconfont';  /* project id 552644 */
-  src: url('//at.alicdn.com/t/font_552644_onmpi05vfs9k9.eot');
-  src: url('//at.alicdn.com/t/font_552644_onmpi05vfs9k9.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_552644_onmpi05vfs9k9.woff') format('woff'),
-  url('//at.alicdn.com/t/font_552644_onmpi05vfs9k9.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_552644_onmpi05vfs9k9.svg#iconfont') format('svg');
-}	
-.iconfont
-    font-family:"iconfont" !important;
-    font-size:16px;font-style:normal;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 0.2px;
-    -moz-osx-font-smoothing: grayscale;
-    color: #5432ee;
+			changeBG(#333);	
+	.iconfont
+		width: 200px;
+		font-family:"iconfont" !important;
+		font-size: 28px;
+		color: #fff;
+ 
+	
+
+
 </style>

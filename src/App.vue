@@ -33,6 +33,7 @@
     <el-menu-item index="/testfilter">filter测试</el-menu-item>
     <el-menu-item index="/testele">elementUI 测试</el-menu-item>
     <el-menu-item index="/testaxios">axios测试</el-menu-item>
+     <el-menu-item index="/lazyload">lazyload测试</el-menu-item>
 </el-menu>
 
     

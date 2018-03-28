@@ -6,11 +6,16 @@ import NewPage from '@/components/NewPage';
 import Fortabs from '@/components/ForTabs';
 import NewRouter from '@/components/NewRouter';
 import NewRouter1 from '@/components/NewRouter/NewRouter1';
-import TestVuex from '@/components/TestVuex';
-import TestFilter from '@/components/TestFilter';
-import ForEleUi from '@/components/ForEleUi';
-import AxiosTest from '@/components/AxiosTest';
+// import TestVuex from '@/components/TestVuex';
+// import TestFilter from '@/components/TestFilter';
+// import ForEleUi from '@/components/ForEleUi';
+// import AxiosTest from '@/components/AxiosTest';
 
+
+const AxiosTest = resolve => require(['@/components/AxiosTest'], resolve);
+const ForEleUi = resolve => require(['@/components/ForEleUi'], resolve);
+const TestFilter = resolve => require(['@/components/TestFilter'], resolve);
+const TestVuex = resolve => require(['@/components/TestVuex'], resolve);
 const LazyLoad  = resolve => require(['@/components/LazyLoad'], resolve);
 
 Vue.use(Router)

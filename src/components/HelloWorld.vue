@@ -11,7 +11,7 @@
 </div>
 </template>
 <script>
-import store from '@/vuex/store';
+//import store from '@/vuex/store';
 export default {
   name: 'HelloWorld',
   data () {
@@ -20,7 +20,7 @@ export default {
     }
   },
   created() {
-    console.log("shit on");
+    console.log(this.$root.parentNode,'------');
   }
 }
 </script>

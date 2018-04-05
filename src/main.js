@@ -13,7 +13,6 @@ Vue.use(ElementUI);
 Vue.prototype.$axios = axios;
 
 Vue.config.productionTip = false
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -22,6 +21,7 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+
  
 // axios拦截器学习， filter学习
 // 惰性加加载尝试

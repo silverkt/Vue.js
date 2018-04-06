@@ -1,0 +1,67 @@
+<script>
+Promise.resolve().then(() => {
+	setTimeout(() => {
+		return "shit";
+	}, 5000);
+}).then(rest => {
+	console.log(rest);
+});
+
+
+let a = new Promise((resolve, reject) => {
+	setTimeout(() => {
+		resolve("resolved");
+	},5000);
+
+	setTimeout(() => {
+		reject(new Error("Error happened"));
+	}, 3000);
+});
+
+
+a.then(res => {
+	console.log(res);
+}, error => {
+	console.log('err happened');
+});
+
+
+a.catch( err => {
+	console.log('catched');
+});
+
+
+
+let alla = Promise.resolve(1);
+let allb = Promise.resolve(2);
+let allc = new Promise(resolve => {
+	setTimeout(() => {
+		resolve(3);
+	}, 2000);
+});
+Promise.all([alla, allb, allc]).then((res) => {
+	console.log('all is ok');
+	console.log(res);
+}).catch(err => {
+	console.log('something wrong');
+});
+
+
+
+
+
+
+
+let racea = Promise.resolve('a');
+let raceb = new Promise(resolve => {
+	setTimeout(() => {
+		resolve('b');
+	}, 2000);
+});
+Promise.race([racea, raceb]).then(res => {
+	console.log('race ok');
+	console.log(res);
+});
+
+
+</script>

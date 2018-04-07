@@ -1,0 +1,67 @@
+<html>
+
+<style>
+.transformtest {
+	width: 200px;
+	height: 100px;
+	transform: rotate(30deg);
+	background: #eee;
+}
+
+
+.radius {
+	
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: 10px 10px 2px #aaa;
+	background: #eee;
+	transition: box-shadow 2s;
+
+}
+
+.radius:hover {
+	box-shadow: 5px 5px 5px #aaa;
+}
+
+.wrapper {
+	position: relative;
+}
+.redball {
+	position: absolute;
+	left: 100px;
+	top: 0px;
+	width:10px;
+	height: 10px;
+	border-radius: 50%;
+	background: rgba(212, 61, 61, 1);
+	transition: left 1s linear, top 1s ease-in;
+}
+</style>
+
+<div class="transformtest"> test the ratate</div>
+
+
+
+<div class="radius"></div>
+
+
+<div class="wrapper">
+<div class="redball" id="canv"></div>
+</div>
+<script>
+
+let ball = document.getElementById("canv")
+console.log(ball.style);
+
+
+let changePos = function() {
+	ball.style.left = "300px";
+	ball.style.top = "200px";
+}
+
+ball.addEventListener("click", changePos);
+
+
+</script>
+</html>

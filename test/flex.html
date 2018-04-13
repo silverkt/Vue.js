@@ -1,6 +1,14 @@
 <html>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <style>
 </style>
-<script></script>
+<script>
+	
+
+	let url = "https://www.easy-mock.com/mock/59a8d3424006183e48ef9507/myproj/test";
+	axios.get(url).then( res => {
+		console.log(res.headers);
+	} );
+</script>
 
 </html>

@@ -1,0 +1,38 @@
+
+if (location.search == '?ws') {
+    let ws = new WebSocket('ws://10.39.30.42:5672');
+} else {
+    let ws = new SockJS('http://10.39.30.42:5672');
+}
+
+
+// 获得Stomp client对象
+let client = Stomp.over(ws);
+
+// SockJS does not support heart-beat: disable heart-beats
+client.heartbeat.outgoing = 0;
+client.heartbeat.incoming = 0;
+client.debug = pipe('#second');
+
+// 定义连接成功回调函数
+let on_connect = function(x) {
+    //data.body是接收到的数据
+    client.subscribe("/fanneng-etsp-alarm-test-v1", function(data) {
+        var msg = data.body;
+        alert("收到数据：" + msg);
+    });
+};
+
+// 定义错误时回调函数
+let on_error =  function() {
+    console.log('error');
+};
+
+// 连接RabbitMQ
+client.connect('fnuser', 'fnuser', on_connect, on_error, '/');
+console.log(">>>连接上http://localhost:15674");
+
+
+
+
+http://10.39.30.42:15672

@@ -29,3 +29,4 @@ new Vue({
 // 嵌套路由子路由
 // weex
 // flex
+// vue-awesome-swiper

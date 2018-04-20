@@ -41,12 +41,64 @@
 
 
 	//post 参数
-	axios.post(postUrl, {
-			"username": "silver.sun",
-			"passwd": "aiaiai"
-	}).then( res => {
-		console.log(res);
-	});
+	// axios.post(postUrl,
+	// 	{
+	// 		"username": "silver.sun",
+	// 		"passwd": "aiaiai"
+	// 	},
+	// 	{
+	// 		headers: {
+	// 		    'X-Custom-Header': 'test'
+	// 	    }
+	// 	}
+
+	
+	// 	).then( res => {
+	// 	console.log(res);
+	// });
+
+
+	// defaults 配置
+	axios.defaults.headers.common['common-get&post'] = 'can-be-seen-in-get-and-post';
+	// axios.defaults.headers.post['only-post'] = 'can-be-seen';
+	// axios.defaults.headers.get['only-get'] = 'can-be-seen';
+	// axios.get(getUrl).then(res => {
+	// 	console.log(res);
+	// });
+
+	// // axios.post(postUrl).then( res => {
+	// // 	console.log(res.data);
+	// // });
+
+var CancelToken = axios.CancelToken;
+var source = CancelToken.source();
+
+	// 拦截器
+    axios.interceptors.request.use( config => {
+    	console.log(config);
+    	source.cancel('end request');
+    	return config;
+    }, err => {
+    	console.log(err);
+    	return Promise.reject(err);
+    });
+
+    axios.get(getUrl, {
+    	cancelToken: source.token
+    }).then( res => {
+    	console.log(res.data);
+    });
+
+
+
+
+
+
+
+
+
+
+
 
 
 	

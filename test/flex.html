@@ -1,5 +1,5 @@
 <html>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./axios.min.js"></script>
 <style>
 </style>
 <script>
@@ -70,26 +70,39 @@
 	// // 	console.log(res.data);
 	// // });
 
-var CancelToken = axios.CancelToken;
-var source = CancelToken.source();
+
 
 	// 拦截器
     axios.interceptors.request.use( config => {
     	console.log(config);
-    	source.cancel('end request');
     	return config;
     }, err => {
     	console.log(err);
     	return Promise.reject(err);
     });
 
-    axios.get(getUrl, {
-    	cancelToken: source.token
-    }).then( res => {
+    axios.get(getUrl).then( res => {
     	console.log(res.data);
     });
 
 
+	// axios取消请求
+	// var CancelToken = axios.CancelToken;
+	// var source = CancelToken.source();
+ //    axios.interceptors.request.use( config => {
+ //    	console.log(config);
+ //    	source.cancel('end request');
+ //    	return config;
+ //    }, err => {
+ //    	console.log(err);
+ //    	return Promise.reject(err);
+ //    });
+
+ //    axios.get(getUrl, {
+ //    	cancelToken: source.token
+ //    }).then( res => {
+ //    	console.log(res.data);
+ //    });
 
 
 

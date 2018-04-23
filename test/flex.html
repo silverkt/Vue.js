@@ -55,11 +55,21 @@
 
 
 .navi {
+	box-sizing: border-box;
+	margin-top: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: stretch;
 	height: 500px;
+}
+.navi>div>div {
+	box-sizing: border-box;
+	padding: 5px;
+	transition: background .5s;
+}
+.navi>div>div:hover {
+	background: #fff;
 }
 .navi>div:nth-child(1) {
 	display: flex;
@@ -99,6 +109,11 @@
 	<div>
 		<div>link1</div>
 		<div>link2</div>
+		<div>link3</div>
+		<div>link3</div>
+		<div>link3</div>
+		<div>link3</div>
+		<div>link3</div>
 		<div>link3</div>
 	</div>
 	<div></div>

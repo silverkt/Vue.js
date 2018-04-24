@@ -91,6 +91,26 @@
 
 
 
+.inline-blk {
+	margin-top: 20px;
+	font-size: 0;
+	display: inline-flex;
+}
+.inline-blk>div {
+	display: inline-block;
+	font-size: 16px;
+}
+
+.inline-blk>div:nth-child(odd) {
+	background: #eee;
+}
+.inline-blk>div:nth-child(even) {
+	background: #666;
+}
+
+
+
+
 </style>
 
 
@@ -119,6 +139,16 @@
 		<div>link3</div>
 	</div>
 	<div></div>
+</div>
+
+
+<div class="inline-blk">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
 </div>
 
 

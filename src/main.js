@@ -32,7 +32,7 @@ new Vue({
 // vue-awesome-swiper
 // animate.css
 
-// work for corpert
+// 
 // http://www.yxdown.com/soft/271882.html
 // http://www.pansoso.com/zh/vue2.0%20pdf
 // http://www.itmop.com/downinfo/216796.html

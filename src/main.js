@@ -31,6 +31,7 @@ new Vue({
 // flex
 // vue-awesome-swiper
 // animate.css
+// blob
 
 // 
 // http://www.yxdown.com/soft/271882.html

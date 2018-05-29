@@ -32,7 +32,7 @@ new Vue({
 // vue-awesome-swiper
 // animate.css
 // blob  golang again
-// back to github
+// echart
 
 // 
 // http://www.yxdown.com/soft/271882.html

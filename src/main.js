@@ -33,7 +33,7 @@ new Vue({
 // animate.css
 // blob  golang again
 // echart
-
+// golang
 // 
 // http://www.yxdown.com/soft/271882.html
 // http://www.pansoso.com/zh/vue2.0%20pdf

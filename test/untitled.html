@@ -1,0 +1,36 @@
+<script>
+
+window.onload = () => {
+
+	let oTxt1 = document.getElementsByTagName("input")[0];
+	let oTxt2 = document.getElementsByTagName("input")[1];
+	let oBtn = document.getElementsByTagName("input")[2];
+
+
+	oBtn.onclick = () => {
+		let c = parseFloat(oTxt1.value) + parseFloat(oTxt2.value);
+		if (isNaN(c)) {
+			alert('error');
+			oTxt1.value = oTxt2.value = '';
+		} else {
+			console.log(c);
+			oTxt1.value = oTxt2.value = '';
+		}
+		
+	}
+
+ 
+
+}
+
+
+</script>
+
+<body>
+
+<input type="text"/> + 
+<input type = "text"/>
+<input type = "button" value = "求和"/>
+
+
+</body>
